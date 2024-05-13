@@ -6,13 +6,71 @@
 </head>
 <body>
     <h2>Форма додавання викладача</h2>
-    <form action>
-    <label for="Прізвище ім'я по батькові">
-        ПІБ:
-    </label>  
-    <br> 
-    <input type="text" id="full_name" name="full_name" >
-    
+    <form action="">
+        <label for="full_name">
+            ПІБ:
+        </label>
+        <input type="text" id="full_name" name="full_name">
+        <br>
+        <label for="gender">
+            Стать:
+        </label>
+        <select id="gender" name="gender">
+            <option value="male">
+                Чоловіча
+            </option>
+            <option value="female">
+                Жіноча
+            </option>
+            <option value="other">
+                Інше
+            </option>
+        </select>
+        <br>
+
+        <label for="birthday">
+            Дата народження:
+        </label>
+        <input type="date" id="birthday" name="birthday">
+        <br>
+
+        <label for="phone_number">
+            Номер телефону:
+        </label>
+        <input type="tel" id="phone_number" name="phone_number">
+        <br>
+
+        <label for="email">
+            Email:
+        </label>
+        <input type="email" id="email" name="email">
+        <br>
+
+        <label for="bg_color">
+            Бажаний колір фону:
+        </label>
+        <input type="color" id="bg_color" name="bg_color">
+        <br>
+        <label for="town">
+        Місто:
+        </label>
+        <input type="text" id="town" name="town">
+        <br>
+
+        <label for="country">
+            Країна:
+        </label>
+        <input type="text" id="country" name="country">
+        <br>
+
+        <label for="comment">
+            Коментар:
+        </label>
+        <textarea id="comment" name="comment">
+        </textarea>
+        <br>
+
+        <input type="submit" value="Надіслати">
     </form>
 </body>
 </html>
